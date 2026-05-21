@@ -1,0 +1,22 @@
+{
+  "name": "stocker",
+  "version": "1.0.0",
+  "description": "Local desktop-style stock and storage system for Arksen Marine",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billbot1221/stocker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/billbot1221/stocker/issues"
+  },
+  "homepage": "https://github.com/billbot1221/stocker#readme"
+}

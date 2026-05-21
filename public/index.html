@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arksen Marine Stocker</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="brand">
+    <div class="logo">Arksen Marine</div>
+    <h1>Stock & Storage</h1>
+  </header>
+
+  <main>
+    <section id="login" class="panel">
+      <h2>Login</h2>
+      <div class="tabs">
+        <button class="action" id="pin-tab">Warehouse PIN</button>
+        <button class="action" id="manager-tab">Manager Email</button>
+      </div>
+
+      <form id="pin-form" class="stack">
+        <input id="pin" placeholder="Enter PIN" inputmode="numeric" />
+        <button class="primary big" type="submit">Login with PIN</button>
+      </form>
+
+      <form id="manager-form" class="stack hidden">
+        <input id="email" placeholder="Manager Email" />
+        <input id="password" type="password" placeholder="Password" />
+        <button class="primary big" type="submit">Login as Manager</button>
+      </form>
+
+      <div id="keypad" class="keypad"></div>
+      <p class="help">Default manager: manager@arksen.local / ChangeMe123! | Default warehouse PIN: 1234</p>
+    </section>
+
+    <section id="app" class="panel hidden">
+      <div class="toolbar">
+        <strong id="user-label"></strong>
+        <button class="action" id="refresh-alerts">Alerts</button>
+      </div>
+
+      <div class="actions-grid">
+        <button class="primary big" data-action="receive">Receive Stock</button>
+        <button class="primary big" data-action="checkout">Check Out</button>
+        <button class="primary big" data-action="transfer">Move Location</button>
+        <button class="primary big" data-action="count">Inventory Count/Audit</button>
+        <button class="primary big" data-action="search">Search Part</button>
+        <button class="primary big manager-only" data-action="po">Create PO</button>
+        <button class="primary big" data-action="receive-po">Receive Against PO</button>
+        <button class="primary big" data-action="report">View/Export Reports</button>
+        <button class="primary big manager-only" data-action="user">User Management</button>
+      </div>
+
+      <section class="panel" id="output"></section>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
